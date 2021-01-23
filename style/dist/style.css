@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #222222;
+  width: 100%;
+}
+
+section {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    max-width: 345px;
+  }
+}
+@media (min-width: 767.98px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 991.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1199.98px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__header {
+  background: linear-gradient(0deg, #DAEAF7 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+
+@media (max-width: 575.98px) {
+  .header {
+    max-width: 376px;
+    height: 376px;
+    align-items: center;
+  }
+  .header h2 {
+    margin-top: 33px;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+  }
+  .header > p {
+    margin-top: 12px;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+  }
+  .header__nav {
+    margin-top: 21px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__nav__left {
+    margin-left: 10px;
+  }
+  .header__nav__right {
+    margin-right: 10px;
+  }
+  .header__button {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 108px;
+    height: 27px;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+  }
+  .header__button p {
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 26px;
+    color: #FFFFFF;
+  }
+}
+.window {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.window > h2 {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-align: center;
+  margin: 0 3px;
+  margin-top: 48px;
+  margin-bottom: 32px;
+}
+.window__pleace:not(:last-child) {
+  margin-bottom: 32px;
+}
+.window__pleace {
+  width: 334.97px;
+  min-height: 448px;
+  left: 20.11px;
+  top: 511px;
+  background: #FFFFFF;
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.window__pleace__text p {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #1F3F68;
+  opacity: 0.6;
+}
+.window__pleace__text h2 {
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #1F3F68;
+  margin-bottom: 13px;
+}
+.window__pleace__img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.window__pleace__img__abs {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.window__pleace__img__abs .window__pleace__img__absImg {
+  position: absolute;
+  top: 40px;
+}
+.window__pleace a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #5A98D0;
+  margin-left: 29px;
+  margin-bottom: 22px;
+}
+.window__pleace a i {
+  margin-left: 14px;
+}
+.window__pleace__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 29px;
+}
+
+.text__content h2 {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+  margin-top: 64px;
+  margin-bottom: 32px;
+}
+.text__content p {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #222222;
+  margin-bottom: 82px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+}
+.icon__content:not(:last-child) {
+  margin-bottom: 16px;
+}
+.icon__content {
+  position: relative;
+}
+.icon__content p {
+  position: absolute;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  top: 16px;
+  left: 16px;
+}

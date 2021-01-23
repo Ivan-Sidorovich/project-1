@@ -1,0 +1,185 @@
+.header
+    display: flex
+    flex-direction: column
+
+.section__header
+    background: linear-gradient(0deg, #DAEAF7 8.84%, rgba(152, 195, 232, 0) 31.12%)
+
+.header
+    align-items: center
+    min-height: 376px
+
+    .illustration__header
+        display: none
+
+    &__nav
+        margin-top: 21px
+        width: 100%
+        display: flex
+        justify-content: space-between
+
+        &__left
+            margin-left: 10px
+        &__right
+            margin-right: 10px
+
+    &__text
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        h2
+            margin-top: 33px
+            font-family: Roboto
+            font-weight: 300
+            font-size: 32px
+            line-height: 37px
+            text-align: center
+            letter-spacing: 0.04em
+            color: #1F3F68
+
+        & > p
+            margin-top: 12px
+            font-family: Roboto
+            font-size: 16px
+            line-height: 26px
+            text-align: center
+            letter-spacing: 0.05em
+            color: #1F3F68
+            opacity: 0.6
+
+        .header__button
+            margin-top: 32px
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 108px
+            height: 27px
+            background: #5A98D0
+            box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2)
+            border-radius: 10px
+            transition-duration: 0.3s
+            &:hover
+                background-color: darken( #5A98D0,10 )
+
+            &:active
+                background-color: darken( #5A98D0,5 )
+
+            p
+
+                font-family: Roboto
+                font-size: 12px
+                line-height: 26px
+                color: #FFFFFF
+
+
+@media (min-width:767.98px)
+    .header
+
+        min-height: 768px
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        &__text
+            align-items: flex-start
+
+            h2
+                margin-left: 31px
+                margin-top: 120px
+                font-family: Roboto
+                font-weight: 300
+                font-size: 64px
+                line-height: 74px
+                letter-spacing: 0.04em
+                color: #1F3F68
+                text-align: left
+
+            & > p
+                margin-left: 31px
+                width: 425px
+                margin-top: 32px
+                font-family: Roboto
+                font-size: 16px
+                line-height: 26px
+                letter-spacing: 0.05em
+                color: #1F3F68
+                opacity: 0.6
+                text-align: left
+
+            .header__button
+
+                margin-left: 31px
+                margin-top: 72px
+                width: 220px
+                height: 56px
+                background: #5A98D0
+                box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2)
+                border-radius: 10px
+                p
+                    font-family: Roboto
+                    font-size: 16px
+                    line-height: 26px
+                    text-align: center
+                    letter-spacing: 0.04em
+                    color: #FFFFFF
+
+        .illustration__header
+            display: block
+            position: absolute
+            bottom: 87px
+            right: 16px
+
+@media (min-width:1140px)
+    .header
+
+        min-height: 768px
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+
+        h2
+            margin-left: 31px
+
+            margin-top: 120px
+            font-family: Roboto
+            font-weight: 300
+            font-size: 64px
+            line-height: 74px
+            letter-spacing: 0.04em
+            color: #1F3F68
+            text-align: left
+
+        & > p
+            margin-left: 31px
+            width: 425px
+            margin-top: 32px
+            font-family: Roboto
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.05em
+            color: #1F3F68
+            opacity: 0.6
+            text-align: left
+
+        &__button
+
+            margin-left: 31px
+            margin-top: 72px
+            width: 220px
+            height: 56px
+            background: #5A98D0
+            box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2)
+            border-radius: 10px
+            p
+                font-family: Roboto
+                font-size: 16px
+                line-height: 26px
+                text-align: center
+                letter-spacing: 0.04em
+                color: #FFFFFF
+
+        .illustration__header
+            width: 648.69px
+            height: 549.04px

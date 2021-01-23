@@ -1,0 +1,413 @@
+.nav__contact
+    width: 100%
+    height: 83px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: #ffffff
+    &__left
+        margin-left: 16px
+    &__right
+        margin-right: 16px
+
+nav
+    z-index: 1
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    top: 0
+    right: -100%
+    position: fixed
+    width: 100vw
+    height: 100vh
+    transition-duration: 0.5s
+    background: #316099
+    i
+        color: #ffffff
+        font-size: 40px
+        margin-bottom: 40px
+
+    ul
+        li
+            list-style-type: none
+
+            a
+                font-size: 30px
+                color: #ffffff
+
+        li:not(:last-child)
+            margin-bottom: 20px
+            list-style-type: none
+
+#switcher
+    display: none
+
+#switcher:checked ~ nav
+    z-index: 1
+    top: 0
+    right: 0
+
+.header__contact
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    background-image: url(../img/fon_header.png)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    div
+
+        h2
+            font-family: Roboto
+            font-weight: 500
+            font-size: 24px
+            line-height: 28px
+            text-align: center
+            letter-spacing: 0.04em
+            color: #FFFFFF
+            margin-top: 48px
+            margin-bottom: 32px
+
+        p
+            font-family: Roboto
+            font-size: 16px
+            line-height: 30px
+            text-align: center
+            color: rgba(255, 255, 255, 0.6)
+            margin-bottom: 61px
+
+.contact__content
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    &__adress
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+
+        div:not(:first-child )
+            margin-left: 20px
+
+        i
+            margin-right: 19px
+        .adress
+            margin-top: 64px
+            p
+                font-family: Roboto
+                font-weight: 300
+                font-size: 16px
+                line-height: 26px
+                letter-spacing: 0.04em
+                color: #1F3F68
+                opacity: 0.6
+                margin-top: 24px
+
+        .phone
+            margin-top: 32px
+            p
+                font-family: Roboto
+                font-weight: 300
+                font-size: 16px
+                line-height: 26px
+                letter-spacing: 0.04em
+                color: #1F3F68
+
+            p:not(:last-child )
+                margin-top: 24px
+
+            p:last-child
+                margin-top: 16px
+
+        .post
+            margin-top: 34px
+            p
+                font-family: Roboto
+                font-size: 16px
+                line-height: 26px
+                letter-spacing: 0.05em
+                color: #1F3F68
+
+            p:not(:last-child )
+                margin-top: 24px
+
+            p:last-child
+                margin-top: 16px
+
+        h2
+            font-family: Roboto
+            font-weight: 500
+            font-size: 20px
+            line-height: 30px
+            letter-spacing: 0.04em
+            color: #1F3F68
+        .contact__img
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-top: 46px
+
+.contact__img
+    margin-top: 46px
+
+.contact__content__form
+    width: 100%
+    height: 514px
+    background: #FFFFFF
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2)
+    border-radius: 10px
+    display: flex
+    justify-content: center
+    margin-top: 32px
+    form
+        display: flex
+        flex-direction: column
+
+    input
+        opacity: 0.4
+        border: 1px solid #356EAD
+        box-sizing: border-box
+        border-radius: 10px
+        width: 271.6px
+        height: 46.26px
+        padding-left: 22px
+        outline: none
+        color: #222222
+
+    input[placeholder="Your Message"]
+        width: 271.6px
+        height: 92.52px
+
+    h2
+
+        font-family: Roboto
+        font-weight: 700
+        font-size: 16px
+        line-height: 30px
+        letter-spacing: 0.04em
+        color: #1F3F68
+        margin-top: 36px
+
+    h3
+        font-family: Roboto
+        font-size: 14px
+        line-height: 30px
+        letter-spacing: 0.04em
+        color: #1F3F68
+        opacity: 0.8
+        margin-top: 20px
+
+    .button__submint
+        width: 271.6px
+        height: 46.26px
+        background: #5A98D0
+        box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+        border-radius: 10px
+        margin-top: 46px
+        transition-duration: 0.3s
+        font-family: Roboto
+        font-weight: 500
+        font-size: 16px
+        line-height: 26px
+        text-align: center
+        letter-spacing: 0.04em
+        color: #FFFFFF
+        outline: none
+        border: none
+        &:hover
+            background-color: darken( #5A98D0,10 )
+
+        &:active
+            background-color: darken( #5A98D0,5 )
+
+.section__contact__content
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.map
+    width: 100%
+    margin-top: 32px
+    margin-bottom: 32px
+
+img[alt="mapM"]
+    display: none
+
+img[alt="mapL"]
+    display: none
+
+.container__contact
+    max-width: 345px
+    margin: 0 auto
+
+@media (min-width:767.98px)
+    .container__contact
+        max-width: 520px
+        margin: 0 auto
+    .map
+        display: none
+
+    img[alt="mapM"]
+        display: block
+        margin-top: 64px
+        margin-bottom: 64px
+
+    .header__contact
+        background-image: url(../img/header__fonM.png)
+
+        div
+
+            h2
+                font-weight: 500
+                font-size: 44px
+                line-height: 74px
+                letter-spacing: 0.04em
+
+            p
+                font-size: 20px
+                line-height: 30px
+                letter-spacing: 0.04em
+
+    .contact__img
+        margin-top: 64px
+
+    .contact__content__form
+        margin-top: 64px
+        width: 520px
+        height: 780px
+
+        input
+            width: 412.15px
+            height: 70.2px
+            padding-left: 40px
+
+        input[placeholder="Your Message"]
+            width: 412.15px
+            height: 140.4px
+
+        h2
+            width: 186px
+            font-size: 20px
+            margin-top: 54px
+
+        h3
+
+            font-size: 16px
+            margin-top: 31px
+
+        .button__submint
+            width: 412.15px
+            height: 70.2px
+            margin-top: 70px
+
+    .contact__content__adress
+        width: 62%
+
+    .nav__contact
+        &__left
+            margin-left: 32px
+        &__right
+            margin-right: 32px
+
+@media (min-width:1140px)
+    nav
+        top: 0
+        right: 0
+        background: #ffffff
+        flex-direction: row
+        width: 50%
+        height: 82px
+        transition-duration: 0s
+        margin-right: 32px
+
+        justify-content: flex-end
+        position: inherit
+        & > ul
+
+            display: flex
+            align-items: center
+            li
+
+                & > a
+                    color: #1F3F68
+
+            li:not(:last-child)
+                margin-right: 20px
+                margin-bottom: 0px
+
+    .close_switcher
+        display: none
+
+    .nav__contact__right
+        display: none
+
+    .container__contact
+        max-width: 1140px
+        margin: 0 auto
+    .map
+        display: none
+
+    img[alt="mapM"]
+        display: none
+
+    .nav__contact
+        max-width: 1370px
+        margin: 0 auto
+
+    img[alt="mapL"]
+        display: block
+        margin-top: 96px
+        margin-bottom: 112px
+
+    .header__contact
+        background-image: url(../img/header_fon3.png)
+        div
+            p
+                width: 776px
+
+    .contact__img
+        margin-top: 64px
+
+    .contact__content
+        flex-direction: row
+        justify-content: space-between
+
+    .contact__content__form
+        margin-top: 64px
+        width: 540px
+        height: 800px
+
+        input
+            width: 428px
+            height: 72px
+            padding-left: 42px
+
+        input[placeholder="Your Message"]
+            width: 428px
+            height: 144px
+
+        h2
+            width: 100%
+            font-size: 20px
+            margin-top: 56px
+            margin-bottom: 16px
+
+        h3
+
+            font-size: 16px
+            margin-top: 32px
+
+        .button__submint
+            width: 428px
+            height: 72px
+            margin-top: 72px
+
+    .nav__contact
+        &__left
+            margin-left: 32px
+        &__right
+            margin-right: 32px

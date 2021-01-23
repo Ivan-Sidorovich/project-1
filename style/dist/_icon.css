@@ -1,0 +1,113 @@
+.icon {
+  display: flex;
+  flex-direction: column;
+}
+.icon__content__top {
+  height: 145px;
+  background-image: url("../img/Mask Group.png");
+  margin-bottom: 16px;
+  background-size: cover;
+  background-position: center;
+}
+.icon__content__top p {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.icon__content__bottom {
+  display: flex;
+  flex-direction: column;
+}
+.icon__content__bottom .icon__content1 {
+  max-width: 343px;
+  height: 255px;
+  background: url("../img/Mask Group2.png");
+  margin-bottom: 16px;
+  background-size: cover;
+  background-position: center;
+}
+.icon__content__bottom .icon__content1 p {
+  margin-top: 16px;
+  margin-left: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.icon__content__bottom .icon__content2 {
+  max-width: 343px;
+  height: 262px;
+  background-image: url("../img/Mask Group3.png");
+  background-size: cover;
+  background-position: center;
+}
+.icon__content__bottom .icon__content2 p {
+  margin-top: 16px;
+  margin-left: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.icon__content__top {
+  max-width: 343px;
+}
+
+@media (min-width: 767.98px) {
+  .icon {
+    margin-top: 64px;
+    align-items: center;
+  }
+  .icon__content__top {
+    background-image: url("../img/Mask Group11.png");
+    min-width: 704.62px;
+    height: 296.68px;
+  }
+  .icon__content__bottom {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .icon__content__bottom .icon__content1 {
+    width: 336px;
+    height: 253px;
+  }
+  .icon__content__bottom p {
+    font-family: Roboto;
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+  }
+  .icon__content__bottom .icon__content2 {
+    width: 336px;
+    height: 253px;
+  }
+  .icon__content__bottom .icon__content2 p {
+    font-family: Roboto;
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+  }
+}
+@media (min-width: 1140px) {
+  .icon__content__top {
+    min-width: 1140px;
+    height: 480px;
+  }
+  .icon__content__bottom {
+    width: 100%;
+  }
+  .icon__content__bottom .icon__content1 {
+    min-width: 554px;
+    height: 417px;
+  }
+  .icon__content__bottom .icon__content2 {
+    min-width: 554px;
+    height: 417px;
+  }
+}
